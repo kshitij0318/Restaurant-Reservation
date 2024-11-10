@@ -13,18 +13,33 @@
 
 /********************** HERO SECTION COMPONENT STYLING **************************/
 /**********************************************************************************************************************/
-nav {
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
   display: flex;
-  max-width: 1500px;
-  min-width: 1500px;
-  padding: 25px 10px 40px 10px;
-  margin-bottom: 25px;
   justify-content: space-between;
-  position: relative;
   align-items: center;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
+.navbar {
+  background-color: transparent;
+  box-shadow: none; /* No shadow initially */
+}
+
+/* Background after scrolling */
+.navbar.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for contrast */
+}
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
 nav::after {
   content: "";
   position: absolute;
@@ -180,6 +195,7 @@ nav svg {
 }
 .heroSection .container .banner .largeBox {
   width: 100%;
+  margin-top: 40px;
 }
 .heroSection .container .banner .combined_boxes {
   display: flex;
