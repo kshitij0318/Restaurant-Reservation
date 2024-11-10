@@ -51,7 +51,8 @@ Installation
 Prerequisites
 Node.js
 MongoDB
-Setup
+
+
 Clone the repository:
 git clone https://github.com/yourusername/restaurant-reservation-system.git
 cd restaurant-reservation-system
