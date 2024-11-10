@@ -19,7 +19,7 @@ const SearchReservation = () => {
     setLoading(true);
     try {
       const { data } = await axios.get(
-        `http://localhost:4000/api/v1/reservation/search?PhoneNumber=${PhoneNumber}`,
+        `https://restaurant-reservation-tjp3.onrender.com/api/v1/reservation/search?PhoneNumber=${PhoneNumber}`,
         {
           headers: {
             "Content-Type": "application/json",

@@ -10,7 +10,7 @@ import ReservationResults from './Pages/ReservationResults'; // Import the Reser
 
 const App = () => {
   return (
-    <Router basename="/mern-project-drab-five">
+    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/success" element={<Success />} />

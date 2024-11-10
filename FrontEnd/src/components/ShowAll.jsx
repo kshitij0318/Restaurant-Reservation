@@ -14,7 +14,7 @@ const ShowAll = () => {
   const handleShowAll = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get("http://localhost:4000/api/v1/reservation/all", {
+      const { data } = await axios.get("https://restaurant-reservation-tjp3.onrender.com/api/v1/reservation/all", {
         headers: {
           "Content-Type": "application/json",
         },
@@ -52,7 +52,7 @@ const ShowAll = () => {
 
     try {
       await axios.put(
-        `http://localhost:4000/api/v1/reservation/update/${editingReservation._id}`,
+        `https://restaurant-reservation-tjp3.onrender.com/api/v1/reservation/update/${editingReservation._id}`,
         { Date: newDate, Time: newTime },
         { headers: { "Content-Type": "application/json" }, withCredentials: true }
       );
@@ -84,7 +84,7 @@ const ShowAll = () => {
   // Handle delete of reservation
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/v1/reservation/delete/${id}`, {
+      await axios.delete(`https://restaurant-reservation-tjp3.onrender.com/api/v1/reservation/delete/${id}`, {
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
       });
