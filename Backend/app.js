@@ -9,7 +9,7 @@ dotenv.config({path : './config/config.env'});
 
 app.use(
     cors({
-        origin: ["https://restaurant-reservation-tjp3.onrender.com"],
+        origin: "*",
         methods: ["GET", "POST", "PUT", "DELETE"],
         credentials: true,
     })
